@@ -12,6 +12,7 @@
 namespace Aluch\YmlGenerator;
 
 use Aluch\YmlGenerator\Model\Category;
+use Aluch\YmlGenerator\Model\Collection;
 use Aluch\YmlGenerator\Model\Currency;
 use Aluch\YmlGenerator\Model\Delivery;
 use Aluch\YmlGenerator\Model\Offer\OfferCondition;
@@ -68,16 +69,14 @@ class Generator
         }
     }
 
-    /**
-     * @param ShopInfo $shopInfo
-     * @param array    $currencies
-     * @param array    $categories
-     * @param array    $offers
-     * @param array    $deliveries
-     *
-     * @return bool
-     */
-    public function generate(ShopInfo $shopInfo, array $currencies, array $categories, array $offers, array $deliveries = [])
+    public function generate(
+        ShopInfo $shopInfo,
+        array $currencies,
+        array $categories,
+        array $offers,
+        array $deliveries = [],
+        array $collections = []
+    ): bool
     {
         try {
             $this->addHeader();
@@ -91,6 +90,11 @@ class Generator
             }
 
             $this->addOffers($offers);
+
+            if (!empty($collections)) {
+                $this->addCollections($collections);
+            }
+
             $this->addFooter();
 
             if ($this->settings->getReturnResultYMLString()) {
@@ -212,10 +216,10 @@ class Generator
         foreach ($offer->toArray() as $name => $value) {
             if (\is_array($value)) {
                 foreach ($value as $itemValue) {
-                    $this->addOfferElement($name, $itemValue);
+                    $this->addElement($name, $itemValue);
                 }
             } else {
-                $this->addOfferElement($name, $value);
+                $this->addElement($name, $value);
             }
         }
         $this->addOfferOutlets($offer);
@@ -370,13 +374,45 @@ class Generator
         }
     }
 
+    private function addCollections(array $collections): void
+    {
+        $this->writer->startElement('collections');
+
+        /** @var Collection $collection */
+        foreach ($collections as $collection) {
+            if ($collection instanceof Collection) {
+                $this->addCollection($collection);
+            }
+        }
+
+        $this->writer->fullEndElement();
+    }
+
+    private function addCollection(Collection $collection): void
+    {
+        $this->writer->startElement('collection');
+        $this->writer->writeAttribute('id', $collection->getId());
+
+        foreach ($collection->toArray() as $name => $value) {
+            if (\is_array($value)) {
+                foreach ($value as $itemValue) {
+                    $this->addElement($name, $itemValue);
+                }
+            } else {
+                $this->addElement($name, $value);
+            }
+        }
+
+        $this->writer->fullEndElement();
+    }
+
     /**
      * @param string $name
      * @param mixed  $value
      *
      * @return bool
      */
-    private function addOfferElement($name, $value)
+    private function addElement($name, $value)
     {
         if ($value === null) {
             return false;

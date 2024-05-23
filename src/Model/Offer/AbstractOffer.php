@@ -21,7 +21,7 @@ abstract class AbstractOffer implements OfferInterface
     /**
      * @var string
      */
-    private $id;
+    private  $id;
 
     /**
      * @var bool
@@ -180,6 +180,8 @@ abstract class AbstractOffer implements OfferInterface
      * @var OfferCondition
      */
     private $condition;
+
+    private array $collectionIds = [];
 
     /**
      * @return array
@@ -917,6 +919,22 @@ abstract class AbstractOffer implements OfferInterface
         return $this;
     }
 
+    public function getCollectionIds(): array
+    {
+        return $this->collectionIds;
+    }
+
+    public function addCollectionId(string $collectionId)
+    {
+        $this->collectionIds[] = $collectionId;
+        return $this;
+    }
+
+    public function setCollectionIds(array $collectionIds): void
+    {
+        $this->collectionIds = $collectionIds;
+    }
+
     /**
      * @return array
      */
@@ -964,6 +982,7 @@ abstract class AbstractOffer implements OfferInterface
             'adult' => $this->isAdult(),
             'cpa' => $this->getCpa(),
             'barcode' => $this->getBarcodes(),
+            'collectionId' => $this->getCollectionIds(),
         ];
     }
 }
