@@ -27,7 +27,7 @@ Installation
 Run composer require
 
 ```bash
-composer require bukashk0zzz/yml-generator
+composer require aluch/yml-generator
 ```
 
 
@@ -35,7 +35,7 @@ Or add this to your `composer.json` file:
 
 ```json
 "require": {
-	"bukashk0zzz/yml-generator": "dev-master",
+	"aluch/yml-generator": "dev-master",
 }
 ```
 
