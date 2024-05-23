@@ -1,20 +1,20 @@
 {
-    "name": "bukashk0zzz/yml-generator",
+    "name": "aluch/yml-generator",
     "description": "YML (Yandex Market Language) file generator",
     "keywords": ["yml", "yandex", "market", "yml-generator"],
-    "homepage": "https://github.com/Bukashk0zzz/YmlGenerator",
+    "homepage": "https://github.com/aluch/YmlGenerator",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Denis Golubovskiy",
-            "email": "bukashk0zzz@gmail.com",
+            "name": "Artem Luchnikov",
+            "email": "artem@luchnikov.ru",
             "role": "Creator"
         }
     ],
     "support": {
-        "email": "bukashk0zzz@gmail.com",
-        "issues": "https://github.com/Bukashk0zzz/YmlGenerator/issues"
+        "email": "artem@luchnikov.ru",
+        "issues": "https://github.com/aluch/YmlGenerator/issues"
     },
     "require": {
         "php": ">=5.6.1",
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bukashk0zzz\\YmlGenerator\\": "src/"
+            "Aluch\\YmlGenerator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bukashk0zzz\\YmlGenerator\\Tests\\": "tests/"
+            "Aluch\\YmlGenerator\\Tests\\": "tests/"
         }
     }
 }
