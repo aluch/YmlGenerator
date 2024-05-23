@@ -26,12 +26,19 @@ class OfferCondition
      */
     private $reasonText;
 
+    private string $quality;
+
     /**
      * @return string
      */
     public function getReasonText()
     {
         return $this->reasonText;
+    }
+
+    public function getQuality(): string
+    {
+        return $this->quality;
     }
 
     /**
@@ -53,6 +60,12 @@ class OfferCondition
     {
         $this->reasonText = $reasonText;
 
+        return $this;
+    }
+
+    public function setQuality($quality)
+    {
+        $this->quality = $quality;
         return $this;
     }
 

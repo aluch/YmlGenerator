@@ -369,6 +369,7 @@ class Generator
         if ($params instanceof OfferCondition) {
             $this->writer->startElement('condition');
             $this->writer->writeAttribute('type', $params->getType());
+            $this->writer->writeElement('quality', $params->getQuality());
             $this->writer->writeElement('reason', $params->getReasonText());
             $this->writer->endElement();
         }
