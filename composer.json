@@ -17,7 +17,7 @@
         "issues": "https://github.com/aluch/YmlGenerator/issues"
     },
     "require": {
-        "php": ">=5.6.1",
+        "php": ">=8.0",
         "ext-simplexml": "*",
         "ext-xmlwriter": "*"
     },
