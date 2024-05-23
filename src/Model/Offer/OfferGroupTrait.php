@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator package.
+ * This file is part of the AluchYmlGenerator package.
  *
  * (c) Gennady Knyazkin <dev@gennadyx.tech>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator\Model\Offer;
+namespace Aluch\YmlGenerator\Model\Offer;
 
 /**
  * Trait OfferGroupTrait

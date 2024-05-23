@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
  * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator\Tests;
+namespace Aluch\YmlGenerator\Tests;
 
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferEventTicket;
+use Aluch\YmlGenerator\Model\Offer\OfferEventTicket;
 
 /**
  * Generator test

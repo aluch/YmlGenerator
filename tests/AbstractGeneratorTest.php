@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
  * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
  *
@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator\Tests;
+namespace Aluch\YmlGenerator\Tests;
 
-use Bukashk0zzz\YmlGenerator\Generator;
-use Bukashk0zzz\YmlGenerator\Model\Category;
-use Bukashk0zzz\YmlGenerator\Model\Currency;
-use Bukashk0zzz\YmlGenerator\Model\Delivery;
-use Bukashk0zzz\YmlGenerator\Model\ShopInfo;
-use Bukashk0zzz\YmlGenerator\Settings;
+use Aluch\YmlGenerator\Generator;
+use Aluch\YmlGenerator\Model\Category;
+use Aluch\YmlGenerator\Model\Currency;
+use Aluch\YmlGenerator\Model\Delivery;
+use Aluch\YmlGenerator\Model\ShopInfo;
+use Aluch\YmlGenerator\Settings;
 use Faker\Factory as Faker;
 
 /**
@@ -74,7 +74,7 @@ abstract class AbstractGeneratorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return \Bukashk0zzz\YmlGenerator\Model\Offer\AbstractOffer
+     * @return \Aluch\YmlGenerator\Model\Offer\AbstractOffer
      */
     abstract protected function createOffer();
 

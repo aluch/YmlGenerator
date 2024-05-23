@@ -1,13 +1,13 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator;
+namespace Aluch\YmlGenerator;
 
 /**
  * Represents a value that should be written to XML as CDATA

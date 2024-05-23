@@ -1,16 +1,16 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator\Tests;
+namespace Aluch\YmlGenerator\Tests;
 
-use Bukashk0zzz\YmlGenerator\Cdata;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferSimple;
+use Aluch\YmlGenerator\Cdata;
+use Aluch\YmlGenerator\Model\Offer\OfferSimple;
 
 /**
  * Generator test
@@ -36,7 +36,7 @@ class OfferCustomElementsGeneratorTest extends AbstractGeneratorTest
      *
      * {@inheritdoc}
      *
-     * @see \Bukashk0zzz\YmlGenerator\Tests\AbstractGeneratorTest::createOffers()
+     * @see \Aluch\YmlGenerator\Tests\AbstractGeneratorTest::createOffers()
      */
     protected function createOffers()
     {
@@ -57,7 +57,7 @@ class OfferCustomElementsGeneratorTest extends AbstractGeneratorTest
      *
      * {@inheritdoc}
      *
-     * @see \Bukashk0zzz\YmlGenerator\Tests\AbstractGeneratorTest::createOffer()
+     * @see \Aluch\YmlGenerator\Tests\AbstractGeneratorTest::createOffer()
      */
     protected function createOffer()
     {
@@ -138,7 +138,7 @@ class OfferCustomElementsGeneratorTest extends AbstractGeneratorTest
     /**
      * Create instance of Cdata class with a predefined test string
      *
-     * @return \Bukashk0zzz\YmlGenerator\Cdata
+     * @return \Aluch\YmlGenerator\Cdata
      */
     private function makeDescription()
     {

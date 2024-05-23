@@ -1,11 +1,11 @@
 # YML (Yandex Market Language) file generator
 
-[![Build Status](https://img.shields.io/scrutinizer/build/g/Bukashk0zzz/YmlGenerator.svg?style=flat-square)](https://travis-ci.org/Bukashk0zzz/YmlGenerator)
-[![Code Coverage](https://img.shields.io/codecov/c/github/Bukashk0zzz/YmlGenerator.svg?style=flat-square)](https://codecov.io/github/Bukashk0zzz/YmlGenerator)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/Bukashk0zzz/YmlGenerator.svg?style=flat-square)](https://scrutinizer-ci.com/g/Bukashk0zzz/YmlGenerator/?branch=master)
-[![License](https://img.shields.io/packagist/l/Bukashk0zzz/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Bukashk0zzz/yml-generator)
-[![Latest Stable Version](https://img.shields.io/packagist/v/Bukashk0zzz/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Bukashk0zzz/yml-generator)
-[![Total Downloads](https://img.shields.io/packagist/dt/Bukashk0zzz/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Bukashk0zzz/yml-generator)
+[![Build Status](https://img.shields.io/scrutinizer/build/g/Aluch/YmlGenerator.svg?style=flat-square)](https://travis-ci.org/Aluch/YmlGenerator)
+[![Code Coverage](https://img.shields.io/codecov/c/github/Aluch/YmlGenerator.svg?style=flat-square)](https://codecov.io/github/Aluch/YmlGenerator)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/Aluch/YmlGenerator.svg?style=flat-square)](https://scrutinizer-ci.com/g/Aluch/YmlGenerator/?branch=master)
+[![License](https://img.shields.io/packagist/l/Aluch/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Aluch/yml-generator)
+[![Latest Stable Version](https://img.shields.io/packagist/v/Aluch/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Aluch/yml-generator)
+[![Total Downloads](https://img.shields.io/packagist/dt/Aluch/yml-generator.svg?style=flat-square)](https://packagist.org/packages/Aluch/yml-generator)
 
 About
 -----
@@ -45,13 +45,13 @@ Usage examples
 ```php
 <?php
 
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferSimple;
-use Bukashk0zzz\YmlGenerator\Model\Category;
-use Bukashk0zzz\YmlGenerator\Model\Currency;
-use Bukashk0zzz\YmlGenerator\Model\Delivery;
-use Bukashk0zzz\YmlGenerator\Model\ShopInfo;
-use Bukashk0zzz\YmlGenerator\Settings;
-use Bukashk0zzz\YmlGenerator\Generator;
+use Aluch\YmlGenerator\Model\Offer\OfferSimple;
+use Aluch\YmlGenerator\Model\Category;
+use Aluch\YmlGenerator\Model\Currency;
+use Aluch\YmlGenerator\Model\Delivery;
+use Aluch\YmlGenerator\Model\ShopInfo;
+use Aluch\YmlGenerator\Settings;
+use Aluch\YmlGenerator\Generator;
 
 $file = tempnam(sys_get_temp_dir(), 'YMLGenerator');
 $settings = (new Settings())
@@ -128,4 +128,4 @@ $offers[] = (new OfferSimple())
 Copyright / License
 -------------------
 
-See [LICENSE](https://github.com/bukashk0zzz/YmlGenerator/blob/master/LICENSE)
+See [LICENSE](https://github.com/aluch/YmlGenerator/blob/master/LICENSE)

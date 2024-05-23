@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
  * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator\Tests;
+namespace Aluch\YmlGenerator\Tests;
 
-use Bukashk0zzz\YmlGenerator\Generator;
-use Bukashk0zzz\YmlGenerator\Model\ShopInfo;
-use Bukashk0zzz\YmlGenerator\Settings;
+use Aluch\YmlGenerator\Generator;
+use Aluch\YmlGenerator\Model\ShopInfo;
+use Aluch\YmlGenerator\Settings;
 
 /**
  * Generator test

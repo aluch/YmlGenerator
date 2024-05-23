@@ -1,25 +1,25 @@
 <?php
 
 /*
- * This file is part of the Bukashk0zzzYmlGenerator
+ * This file is part of the AluchYmlGenerator
  *
- * (c) Denis Golubovskiy <bukashk0zzz@gmail.com>
+ * (c) Artem Luchnikov <artem@luchnikov.ru>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Bukashk0zzz\YmlGenerator;
+namespace Aluch\YmlGenerator;
 
-use Bukashk0zzz\YmlGenerator\Model\Category;
-use Bukashk0zzz\YmlGenerator\Model\Currency;
-use Bukashk0zzz\YmlGenerator\Model\Delivery;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferCondition;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferGroupAwareInterface;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferInterface;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferOutlet;
-use Bukashk0zzz\YmlGenerator\Model\Offer\OfferParam;
-use Bukashk0zzz\YmlGenerator\Model\ShopInfo;
+use Aluch\YmlGenerator\Model\Category;
+use Aluch\YmlGenerator\Model\Currency;
+use Aluch\YmlGenerator\Model\Delivery;
+use Aluch\YmlGenerator\Model\Offer\OfferCondition;
+use Aluch\YmlGenerator\Model\Offer\OfferGroupAwareInterface;
+use Aluch\YmlGenerator\Model\Offer\OfferInterface;
+use Aluch\YmlGenerator\Model\Offer\OfferOutlet;
+use Aluch\YmlGenerator\Model\Offer\OfferParam;
+use Aluch\YmlGenerator\Model\ShopInfo;
 
 /**
  * Class Generator
