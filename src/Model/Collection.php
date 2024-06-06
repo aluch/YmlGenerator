@@ -82,7 +82,6 @@ class Collection
     public function toArray(): array
     {
         return [
-            'id' => $this->getId(),
             'url' => $this->getUrl(),
             'picture' => $this->getPictures(),
             'name' => $this->getName(),
